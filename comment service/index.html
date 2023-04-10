@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Commentservice</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="commentservice">
+            <div class="commentsblock">
+                <p class="commentstext">Оставьте Ваш комментарий:</p>
+                <form class="name" id="commentsform" >
+                    <label for="nametext" class="nametext" >Введите Ваши ФИО</label>
+                    <input id="nametext" class="username" type="text">
+                <!--</form>
+                <form class="avatar">-->
+                    <label for="link" class="avatartext">Введите ссылку Вашего аватара:</label>
+                    <input id="link" class="avatarlink"  type="text">
+                <!--</form>
+                <form class="comment">-->
+                    <label for="commentsdown" class="commentsdown">Оставьте комментарий:</label>
+                    <textarea id="commentsdown" class="commentsfield" cols="40" rows="3"></textarea>
+                </form>  
+                <button class="submit" type="submit" onclick=submitForm()>Отправить</button>  
+            </div>    
+            <div class="chatblock">
+                <p class="chat-title">ЧАТ</p>
+                <div class="chat-display">
+                    <img class="userphoto" src="" >
+                    <p class="shownUserName"></p>
+                </div>
+                <p class="user-text"></p>
+            </div>    
+        </div>
+    </main>
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
